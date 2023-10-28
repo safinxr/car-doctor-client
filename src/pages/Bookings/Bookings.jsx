@@ -12,7 +12,7 @@ const Bookings = () => {
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [url]);
-    console.log(bookings);
+
 
     const handleDelete = id => {
         const proceed = confirm('Are You sure you want to delete');
